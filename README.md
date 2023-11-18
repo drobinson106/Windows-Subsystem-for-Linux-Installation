@@ -9,20 +9,19 @@ This repository provides a guide on how to install Kali Linux and Ubuntu on Wind
 
 ## Enabling WSL
 
-1. **Open PowerShell as Administrator** and run:
-```
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-```
+1. **Enable WSL through Windows Features:**
+   - Open the Start menu and search for “Turn Windows features on or off” and select it.
+   - Scroll down in the Windows Features window and check the box next to “Windows Subsystem for Linux”.
+   - Click OK and wait for the installation to complete. You might be prompted to restart your computer.
 
 2. **For WSL 2 (optional):** 
-- Enable the Virtual Machine Platform feature:
-  ```
-  dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-  ```
-- Set WSL 2 as the default version:
-  ```
-  wsl --set-default-version 2
-  ```
+   - In the Start menu, search for “Turn Windows features on or off” and open it.
+   - Scroll and find “Virtual Machine Platform”, check the box next to it.
+   - Click OK and restart your computer when prompted.
+   - After restarting, open PowerShell as an administrator and set WSL 2 as the default version:
+     ```
+     wsl --set-default-version 2
+     ```
 
 3. **Restart your computer.**
 
@@ -55,7 +54,7 @@ sudo apt upgrade
 
 ## Usage
 
-- Access your WSL distributions via the Start menu typing ```wsl```
+- Access your WSL distributions via the Start menu typing ```Ubuntu``` or ```Kali Linux```
 - Access your WSL distributions through the CMD by typing the command:
 ```
 wsl -d <distro>
