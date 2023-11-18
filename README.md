@@ -57,8 +57,9 @@ sudo apt upgrade
 
 - Access your WSL distributions via the Start menu typing ```wsl```
 - Access your WSL distributions through the CMD by typing the command:
-```bash
-wsl -d <distro> ```
+```
+wsl -d <distro>
+```
 
 ## Additional Resources
 
