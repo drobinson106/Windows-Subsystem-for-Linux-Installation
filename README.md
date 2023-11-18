@@ -60,16 +60,17 @@ To change your hostname in WSL, follow these steps:
    - Launch your WSL distribution (Kali Linux or Ubuntu) from the Start menu.
 
 2. **Change the Hostname:**
-   - Use a text editor (like `nano` or `vi`) to edit the `/etc/hostname` file:
+   - Use a text editor (like `nano` or `vi`) to add this into the `/etc/wsl.conf` file:
      ```bash
-     sudo nano /etc/hostname
+     [network]
+     hostname = <desire-hostname>
+     generateHosts = false
      ```
-   - Replace the current hostname with your desired new hostname.
 
 3. **Edit the Hosts File:**
    - Edit the `/etc/hosts` file:
      ```bash
-     sudo nano /etc/hosts
+     sudo vi /etc/hosts
      ```
    - Find the line with your old hostname and replace it with the new one.
 
