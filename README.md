@@ -92,9 +92,9 @@ Note: In WSL 1, hostname changes are not persistent between restarts. In WSL 2, 
 
 - Access your WSL distributions via the Start menu typing ```Ubuntu``` or ```Kali Linux```
 - Access your WSL distributions through the CMD by typing the command:
-```
-wsl -d <distro>
-```
+   ```
+   wsl -d <distro>
+   ```
 
 ## Additional Resources
 
