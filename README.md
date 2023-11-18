@@ -52,6 +52,42 @@ sudo apt update
 sudo apt upgrade
 ```
 
+## Changing Your Hostname in WSL (optional)
+
+To change your hostname in WSL, follow these steps:
+
+1. **Open Your WSL Terminal:**
+   - Launch your WSL distribution (Kali Linux or Ubuntu) from the Start menu.
+
+2. **Change the Hostname:**
+   - Use a text editor (like `nano` or `vi`) to edit the `/etc/hostname` file:
+     ```bash
+     sudo nano /etc/hostname
+     ```
+   - Replace the current hostname with your desired new hostname.
+
+3. **Edit the Hosts File:**
+   - Edit the `/etc/hosts` file:
+     ```bash
+     sudo nano /etc/hosts
+     ```
+   - Find the line with your old hostname and replace it with the new one.
+
+4. **Apply the Changes:**
+   - Save the changes and exit the editor.
+   - To apply the changes, exit WSL and then restart it:
+     - Close the WSL terminal.
+     - Open PowerShell as Administrator on Windows and run:
+       ```
+       wsl --shutdown
+       ```
+     - Reopen your WSL terminal.
+
+5. **Verify the Change:**
+   - Check your new hostname by typing `hostname` in your WSL terminal.
+
+Note: In WSL 1, hostname changes are not persistent between restarts. In WSL 2, these changes will persist.
+
 ## Usage
 
 - Access your WSL distributions via the Start menu typing ```Ubuntu``` or ```Kali Linux```
