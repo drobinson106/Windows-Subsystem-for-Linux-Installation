@@ -55,9 +55,10 @@ sudo apt upgrade
 
 ## Usage
 
-- Access your WSL distributions via the Start menu typing wsl
+- Access your WSL distributions via the Start menu typing ```wsl```
 - Access your WSL distributions through the CMD by typing the command:
-``` wsl -d <distro> ```
+```bash
+wsl -d <distro> ```
 
 ## Additional Resources
 
