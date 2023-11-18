@@ -14,8 +14,7 @@ This repository provides a guide on how to install Kali Linux and Ubuntu on Wind
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-
-3. **For WSL 2 (optional):** 
+2. **For WSL 2 (optional):** 
 - Enable the Virtual Machine Platform feature:
   ```
   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -56,7 +55,9 @@ sudo apt upgrade
 
 ## Usage
 
-- Access your WSL distributions via the Start menu or by opening a new terminal and typing `wsl`.
+- Access your WSL distributions via the Start menu typing wsl
+- Access your WSL distributions through the CMD by typing the command:
+``` wsl -d <distro> ```
 
 ## Additional Resources
 
